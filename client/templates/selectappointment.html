@@ -1,12 +1,11 @@
 ---
 name: appt-time
 url: /appt-time
-animationIn: fadeIn
-animationOut: fadeOut
+
 ---
 
 <div class="grid-container">
-  <h1>3 Elements Chiropractic & Wellness, PLLC</h1>
+  <h1>V2 3 Elements Chiropractic & Wellness, PLLC</h1>
   <p class="lead">Request an appointment time online:</p>
 
 
@@ -34,8 +33,6 @@ animationOut: fadeOut
           <input type="radio" name="contactmethod" value="phone" checked>Phone
           <br>
           <input type="radio" name="contactmethod" value="email">Email
-          <br>
-          <input type="submit" value="Pick Appointment Time">
         </form>
 
 
@@ -46,8 +43,11 @@ animationOut: fadeOut
   <!--Progress Bar Start -->
   <div class="grid-block">
     <progress class="high" value="66" max="100"></progress>
-
-
   </div>
   <!--End Progress Bar -->
+  <div>
+    <a ui-sref="home">Prev</a>
+    <a ui-sref="confirmation">Next</a>
+  </div>
+
 </div>
