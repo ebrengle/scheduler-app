@@ -5,49 +5,51 @@ url: /appt-time
 ---
 
 <div class="grid-container">
-  <h1>V2 3 Elements Chiropractic & Wellness, PLLC</h1>
-  <p class="lead">Request an appointment time online:</p>
+  <h1 class="logo">3 Elements Chiropractic & Wellness, PLLC</h1>
+  <p class="lead instruction">Request an appointment time online:</p>
 
 
   <!--Basic User Form Input Div -->
   <div class="grid-block">
     <div class="grid-container">
+      <div class="basic-form">
         <form>
-          <label for="firstname">First Name:</label>
-          <input type="text" name="firstname" placeholder="Jane">
+          <label for="physician">Select Your Provider:</label>
+          <select name="physician" id="">
+            <option></option>
+            <option value="">Dr. Kimberly G. Brengle</option>
+            <option value="">Molly Stoker Pohlman, LMT</option>
+          </select>
 
-          <label for="lastname">Last Name:</label>
-          <input type="text" name="lastname" placeholder="Doe">
+          <label for="primary">Request Appointment Time:</label>
 
-          <label for="birthday">Birthday:</label>
-          <input type="date" name="birthday">
 
-          <label for="phonenumber">Phone:</label>
-          <input type="tel" name="phonenumber" placeholder="555-555-5555">
+          <label for="secondary">Select Alternative Time:</label>
+
+
+          <label for="first-avail">Request First Available:</label>
+
 
           <label for="email">Email:</label>
           <input type="email" name="email" placeholder="You@Email.com">
 
           <label for="email">Preferred Contact Method:</label>
-          <br>
-          <input type="radio" name="contactmethod" value="phone" checked>Phone
-          <br>
-          <input type="radio" name="contactmethod" value="email">Email
+
+
         </form>
 
-
+      </div>
     </div>
   </div>
   <!--End Basic User Form Input Div -->
 
   <!--Progress Bar Start -->
   <div class="grid-block">
-    <progress class="high" value="66" max="100"></progress>
+    <progress class="high" value="33" max="100"></progress>
   </div>
   <!--End Progress Bar -->
   <div>
-    <a ui-sref="home">Prev</a>
-    <a ui-sref="confirmation">Next</a>
+    <a class="button prev" ui-sref="home">Prev</a>
+    <a class="button next" ui-sref="confirmation" class="btn">Next</a>
   </div>
-
 </div>

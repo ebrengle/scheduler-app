@@ -5,15 +5,16 @@ url: /confirmation
 ---
 
 <div class="grid-container">
-  <h1>V3 3 Elements Chiropractic & Wellness, PLLC</h1>
-  <p class="lead">Request an appointment time online:</p>
+  <h1 class="logo">3 Elements Chiropractic & Wellness, PLLC</h1>
+  <p class="lead instruction">Request an appointment time online:</p>
 
 
   <!--Basic User Form Input Div -->
   <div class="grid-block">
     <div class="grid-container">
+      <div class="basic-form">
         <form>
-          <label for="firstname">First Name:</label>
+          <label for="physician">Select Your Provider:</label>
           <input type="text" name="firstname" placeholder="Jane">
 
           <label for="lastname">Last Name:</label>
@@ -29,27 +30,31 @@ url: /confirmation
           <input type="email" name="email" placeholder="You@Email.com">
 
           <label for="email">Preferred Contact Method:</label>
-          <br>
-          <input type="radio" name="contactmethod" value="phone" checked>Phone
-          <br>
-          <input type="radio" name="contactmethod" value="email">Email
+
+          <ul class="button-group segmented">
+            <li>
+              <input type="radio" name="method" value="email" id="contactmethodemail" checked="">
+              <label for="contactmethodemail">Email</label>
+            </li>
+            <li>
+              <input type="radio" name="method" value="phone" id="contactmethodphone">
+              <label for="contactmethodphone">Phone</label>
+            </li>
+          </ul>
         </form>
 
-
+      </div>
     </div>
   </div>
   <!--End Basic User Form Input Div -->
 
   <!--Progress Bar Start -->
   <div class="grid-block">
-    <progress class="high" value="100" max="100"></progress>
+    <progress class="high" value="33" max="100"></progress>
   </div>
   <!--End Progress Bar -->
-  <!--Begin Form Nave -->
   <div>
-    <a ui-sref="appt-time">Prev</a>
-    <a ui-sref="submit">Submit</a>
+    <a class="button prev" ui-sref="appt-time">Prev</a>
+    <a class="button next" ui-sref="" class="btn">Submit</a>
   </div>
-  <!--End Form Nav -->
-
 </div>
